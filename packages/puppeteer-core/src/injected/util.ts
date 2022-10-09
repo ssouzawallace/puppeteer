@@ -69,7 +69,7 @@ function isBoundingBoxVisible(element: Element): boolean {
     rect.height > 0 &&
     rect.right > 0 &&
     rect.bottom > 0 &&
-    rect.left < self.innerWidth &&
-    rect.top < self.innerHeight
+    rect.left < document.body.scrollWidth &&
+    rect.top < document.body.scrollHeight
   );
 }
